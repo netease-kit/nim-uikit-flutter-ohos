@@ -2,7 +2,6 @@
 // Use of this source code is governed by a MIT license that can be
 // found in the LICENSE file.
 
-import 'package:auth/auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:im_demo/src/mine/setting/language_setting.dart';
 import 'package:netease_common_ui/ui/background.dart';
@@ -142,8 +141,8 @@ class _MineSettingPageState extends State<MineSettingPage> {
             CardBackground(
               child: Column(
                 children:
-                    ListTile.divideTiles(context: context, tiles: switchTiles)
-                        .toList(),
+                ListTile.divideTiles(context: context, tiles: switchTiles)
+                    .toList(),
               ),
             ),
             _divider(),
@@ -158,7 +157,7 @@ class _MineSettingPageState extends State<MineSettingPage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  const LanguageSettingPage()));
+                              const LanguageSettingPage()));
                     },
                   ),
                   // Visibility(
@@ -182,16 +181,15 @@ class _MineSettingPageState extends State<MineSettingPage> {
               child: InkWell(
                 onTap: () {
                   showCommonDialog(
-                          context: context,
-                          title: S.of(context).mineLogout,
-                          content: S.of(context).logoutDialogContent,
-                          navigateContent: S.of(context).logoutDialogDisagree,
-                          positiveContent: S.of(context).logoutDialogAgree)
+                      context: context,
+                      title: S.of(context).mineLogout,
+                      content: S.of(context).logoutDialogContent,
+                      navigateContent: S.of(context).logoutDialogDisagree,
+                      positiveContent: S.of(context).logoutDialogAgree)
                       .then((value) {
                     if (value ?? false) {
                       IMKitClient.logoutIM().then((value) {
                         if (value) {
-                          UnifyLogin.logout();
                           Navigator.pop(context);
                         }
                       });
@@ -204,7 +202,7 @@ class _MineSettingPageState extends State<MineSettingPage> {
                   child: Text(
                     S.of(context).mineLogout,
                     style:
-                        const TextStyle(fontSize: 16, color: Color(0xffe6605c)),
+                    const TextStyle(fontSize: 16, color: Color(0xffe6605c)),
                   ),
                 ),
               ),

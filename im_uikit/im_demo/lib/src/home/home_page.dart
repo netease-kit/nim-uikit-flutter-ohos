@@ -4,7 +4,6 @@
 
 import 'dart:convert';
 
-import 'package:auth/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -28,7 +27,6 @@ import 'package:nim_conversationkit_ui/page/conversation_page.dart';
 import 'package:nim_core_v2/nim_core.dart';
 import 'package:yunxin_alog/yunxin_alog.dart';
 import 'package:nim_chatkit/repo/config_repo.dart';
-import 'package:nim_chatkit/im_kit_client.dart';
 
 const channelName = "com.netease.yunxin.app.flutter.im/channel";
 const pushMethodName = "pushMessage";
@@ -156,25 +154,13 @@ class _HomePageState extends State<HomePage> {
     ConversationKitClient.instance.conversationUIConfig = ConversationUIConfig(
         itemConfig: ConversationItemConfig(
             lastMessageContentBuilder: (context, conversationInfo) {
-      if (conversationInfo.conversation.lastMessage?.messageType ==
-              NIMMessageType.custom &&
-          conversationInfo.conversation.lastMessage?.attachment == null) {
-        return S.of(context).customMessage;
-      }
-      return null;
-    }));
-    _addLoginListener();
-  }
-
-  void _addLoginListener() {
-    NimCore.instance.loginService.onKickedOffline.listen((event) {
-      //返回根目录
-      Navigator.popUntil(context, ModalRoute.withName('/'));
-      Fluttertoast.showToast(msg: S.of(context).kickedOff);
-      //被踢下线
-      IMKitClient.logoutIM();
-      UnifyLogin.logout();
-    });
+              if (conversationInfo.conversation.lastMessage?.messageType ==
+                  NIMMessageType.custom &&
+                  conversationInfo.conversation.lastMessage?.attachment == null) {
+                return S.of(context).customMessage;
+              }
+              return null;
+            }));
   }
 
   @override
@@ -190,8 +176,8 @@ class _HomePageState extends State<HomePage> {
     String? sessionId;
     String? sessionType;
     if ((await NimCore.instance.conversationIdUtil
-                .conversationType(conversationId))
-            .data ==
+        .conversationType(conversationId))
+        .data ==
         NIMConversationType.p2p) {
       sessionId = getIt<IMLoginService>().userInfo?.accountId;
       sessionType = "p2p";
@@ -223,7 +209,7 @@ class _HomePageState extends State<HomePage> {
     // 添加vivo 推送参数
 
     var vivoField = {
-      "pushMode": 1 //推送模式 0：正式推送；1：测试推送，不填默认为0
+      "pushMode": 0 //推送模式 0：正式推送；1：测试推送，不填默认为0
     };
 
     pushPayload["vivoField"] = vivoField;
@@ -299,13 +285,13 @@ class _HomePageState extends State<HomePage> {
           elevation: 0,
           items: List.generate(
             bottomNavigatorList().length,
-            (index) => BottomNavigationBarItem(
+                (index) => BottomNavigationBarItem(
               icon: _getIcon(
                   index == currentIndex
                       ? bottomNavigatorList()[index].selectedIcon
                       : bottomNavigatorList()[index].unselectedIcon,
                   showRedPoint: (index == 1 &&
-                          (contactUnreadCount + teamActionsUnreadCount) > 0) ||
+                      (contactUnreadCount + teamActionsUnreadCount) > 0) ||
                       (index == 0 && chatUnreadCount > 0)),
               label: bottomNavigatorList()[index].title,
             ),
@@ -366,7 +352,7 @@ class _HomePageState extends State<HomePage> {
           width: 28,
           height: 28,
           colorFilter:
-              ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
+          ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
         ),
       ),
       NavigationBarData(
@@ -382,7 +368,7 @@ class _HomePageState extends State<HomePage> {
           width: 28,
           height: 28,
           colorFilter:
-              ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
+          ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
         ),
       ),
       NavigationBarData(
@@ -398,7 +384,7 @@ class _HomePageState extends State<HomePage> {
           width: 28,
           height: 28,
           colorFilter:
-              ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
+          ColorFilter.mode(CommonColors.color_c5c9d2, BlendMode.srcIn),
         ),
       ),
     ];

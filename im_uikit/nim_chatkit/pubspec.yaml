@@ -42,6 +42,12 @@ dependencies:
       path: ./sqflite
 #  go_router: ^14.8.0
 
+dependency_overrides:
+  path_provider:
+    git:
+      url: "https://gitcode.com/openharmony-tpc/flutter_packages.git"
+      path: "packages/path_provider/path_provider"
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

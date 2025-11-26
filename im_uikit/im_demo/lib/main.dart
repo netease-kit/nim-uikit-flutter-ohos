@@ -113,7 +113,7 @@ class _MainAppState extends State<MainApp> {
   ///设置默认的语言，不设置则根据系统语言
   void _setDefaultLanguage() async {
     CommonUIDefaultLanguage.commonDefaultLanguage =
-        await ConfigRepo.getLanguage();
+    await ConfigRepo.getLanguage();
   }
 
   @override
@@ -133,46 +133,40 @@ class _MainAppState extends State<MainApp> {
       minTextAdapt: true,
       useInheritedMediaQuery: true,
       builder: (context, child) {
-        return MultiProvider(
-          providers: [
-            ChangeNotifierProvider.value(value: UnifyLogin.getLoginModel()),
+        return MaterialApp(
+          onGenerateTitle: (BuildContext context) => S.of(context).appName,
+          localizationsDelegates: [
+            S.delegate,
+            CommonUILocalizations.delegate,
+            ConversationKitClient.delegate,
+            ChatKitClient.delegate,
+            ContactKitClient.delegate,
+            TeamKitClient.delegate,
+            SearchKitClient.delegate,
+            NECallKitUI.delegate,
+            ...GlobalMaterialLocalizations.delegates,
           ],
-          child: MaterialApp(
-            onGenerateTitle: (BuildContext context) => S.of(context).appName,
-            localizationsDelegates: [
-              S.delegate,
-              UnifyLogin.getLoginDelegate(),
-              CommonUILocalizations.delegate,
-              ConversationKitClient.delegate,
-              ChatKitClient.delegate,
-              ContactKitClient.delegate,
-              TeamKitClient.delegate,
-              SearchKitClient.delegate,
-              NECallKitUI.delegate,
-              ...GlobalMaterialLocalizations.delegates,
-            ],
-            navigatorObservers: [
-              IMKitRouter.instance.routeObserver,
-              NECallKitUI.navigatorObserver
-            ],
-            supportedLocales: IMKitClient.supportedLocales,
-            theme: ThemeData(
-                primaryColor: CommonColors.color_337eff,
-                pageTransitionsTheme: PageTransitionsTheme(builders: {
-                  TargetPlatform.android: CupertinoPageTransitionsBuilder(),
-                  TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
-                }),
-                appBarTheme: const AppBarTheme(
-                    backgroundColor: Colors.white,
-                    elevation: 1,
-                    iconTheme: IconThemeData(color: CommonColors.color_333333),
-                    titleTextStyle: TextStyle(
-                        fontSize: 16, color: CommonColors.color_333333),
-                    systemOverlayStyle: SystemUiOverlayStyle.dark),
-                useMaterial3: false),
-            routes: IMKitRouter.instance.routes,
-            home: child,
-          ),
+          navigatorObservers: [
+            IMKitRouter.instance.routeObserver,
+            NECallKitUI.navigatorObserver
+          ],
+          supportedLocales: IMKitClient.supportedLocales,
+          theme: ThemeData(
+              primaryColor: CommonColors.color_337eff,
+              pageTransitionsTheme: PageTransitionsTheme(builders: {
+                TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+                TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+              }),
+              appBarTheme: const AppBarTheme(
+                  backgroundColor: Colors.white,
+                  elevation: 1,
+                  iconTheme: IconThemeData(color: CommonColors.color_333333),
+                  titleTextStyle:
+                  TextStyle(fontSize: 16, color: CommonColors.color_333333),
+                  systemOverlayStyle: SystemUiOverlayStyle.dark),
+              useMaterial3: false),
+          routes: IMKitRouter.instance.routes,
+          home: child,
         );
       },
       child: SplashPage(
