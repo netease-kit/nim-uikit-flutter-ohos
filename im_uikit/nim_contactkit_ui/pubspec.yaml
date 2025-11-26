@@ -1,0 +1,96 @@
+name: nim_contactkit_ui
+description: Contact UI base on ContactKit.
+version: 10.6.0-ohos
+homepage: https://github.com/netease-kit/nim-uikit-flutter
+# Remove this line if you wish to publish to pub.dev
+#publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  nim_chatkit:
+#      ">=10.5.0 <10.6.0"
+    path: ../nim_chatkit
+  netease_corekit:
+#    ">=1.3.0 <1.4.0"
+    path: ../../netease_corekit/netease_corekit
+  netease_common_ui:
+#    ">=10.5.0 <10.6.0"
+    path: ../../common/netease_common_ui
+  azlistview_plus: ^3.0.0
+  provider: ^6.0.0
+  lpinyin: ^2.0.3
+  pull_to_refresh: ^2.0.0
+  nim_core_v2:
+    git:
+      url: "https://github.com/netease-kit/NIM-Flutter-SDK-OHOS.git"
+  intl: any
+  yunxin_alog: ^2.0.0
+  connectivity_plus:
+    git:
+      url: "https://gitee.com/openharmony-sig/flutter_plus_plugins.git"
+      path: "packages/connectivity_plus/connectivity_plus"
+  fluttertoast:
+    git:
+      url: "https://gitcode.com/openharmony-sig/flutter_fluttertoast"
+  flutter_svg: ^2.0.7
+  scrollable_positioned_list: ^0.3.8
+
+dependency_overrides:
+  path_provider:
+    git:
+      url: "https://gitcode.com/openharmony-tpc/flutter_packages.git"
+      path: "packages/path_provider/path_provider"
+  sqflite:
+    git:
+      url: "https://gitcode.com/openharmony-sig/flutter_sqflite.git"
+      path: ./sqflite
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  assets:
+    - images/
+#
+# For details regarding assets in packages, see
+# https://flutter.dev/assets-and-images/#from-packages
+#
+# An image asset can refer to one or more resolution-specific "variants", see
+# https://flutter.dev/assets-and-images/#resolution-aware
+
+# To add custom fonts to your package, add a fonts section here,
+# in this "flutter" section. Each entry in this list should have a
+# "family" key with the font family name, and a "fonts" key with a
+# list giving the asset and other descriptors for the font. For
+# example:
+# fonts:
+#   - family: Schyler
+#     fonts:
+#       - asset: fonts/Schyler-Regular.ttf
+#       - asset: fonts/Schyler-Italic.ttf
+#         style: italic
+#   - family: Trajan Pro
+#     fonts:
+#       - asset: fonts/TrajanPro.ttf
+#       - asset: fonts/TrajanPro_Bold.ttf
+#         weight: 700
+#
+# For details regarding fonts in packages, see
+# https://flutter.dev/custom-fonts/#from-packages

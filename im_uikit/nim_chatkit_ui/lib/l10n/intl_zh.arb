@@ -1,0 +1,548 @@
+{
+  "@@locale": "zh",
+  "chatMessageSendHint": "发送给 {userName}",
+  "@chatMessageSendHint": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatPressedToSpeak": "按住说话",
+  "chatMessageVoiceIn": "松开发送，按住滑到空白区域取消",
+  "chatMessagePickPhoto": "照片",
+  "chatMessagePickVideo": "视频",
+  "chatMessageMoreShoot": "拍摄",
+  "chatMessageTakePhoto": "拍照",
+  "chatMessageTakeVideo": "摄像",
+  "chatMessageNonsupport": "当前版本暂不支持该消息体",
+  "chatMessageMoreFile": "文件",
+  "chatMessageMoreTranslate": "翻译",
+  "chatTranslateTo": "翻译为...",
+  "chatTranslateSure": "AI处理",
+  "chatTranslating": "AI处理中...",
+  "chatTranslateUse": "使用↓",
+  "chatTranslateLanguageTitle": "将输入内容翻译为",
+  "chatMessageMoreLocation": "位置",
+  "chatMessageAMapNotFound": "未检测到高德地图",
+  "chatMessageTencentMapNotFound": "未检测到腾讯地图",
+  "chatMessageAMap": "高德地图",
+  "chatMessageTencentMap": "腾讯地图",
+  "chatMessageUnknownType": "未知类型",
+  "chatMessageImageSave": "图片已保存到手机",
+  "chatMessageVideoSave": "视频已保存到手机",
+  "chatMessageVideoSaveFail": "视频保存失败",
+  "chatMessageImageSaveFail": "图片保存失败",
+  "chatMessageActionCopy": "复制",
+  "chatMessageActionReply": "回复",
+  "chatMessageActionForward": "转发",
+  "chatMessageActionPin": "标记",
+  "chatMessageActionUnPin": "取消标记",
+  "chatMessageActionMultiSelect": "多选",
+  "chatMessageActionCollect": "收藏",
+  "chatMessageActionDelete": "删除",
+  "chatMessageActionRevoke": "撤回",
+  "chatMessageCopySuccess": "复制成功",
+  "chatMessageCollectSuccess": "收藏成功",
+  "chatMessageDeleteConfirm": "删除此消息？",
+  "chatMessageRevokeConfirm": "撤回此消息？",
+  "chatMessagePinMessage": "{userName}标记了这条信息，对话内容双方均可见",
+  "@chatMessagePinMessage": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessagePinMessageForTeam": "{userName}标记了这条信息，所有群成员均可见",
+  "@chatMessagePinMessageForTeam": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageHaveBeenRevoked": "此消息已撤回",
+  "chatMessageReedit": " 重新编辑 >",
+  "chatMessageRevokeOverTime": "已超过时间无法撤回",
+  "chatMessageRevokeFailed": "撤回失败",
+  "chatMessageHaveBeenRevokedOrDelete": "该消息已被撤回或者删除",
+  "chatMessageReplySomeone": "回复 {content}",
+  "@chatMessageReplySomeone": {
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageBriefImage": "[图片]",
+  "chatMessageBriefAudio": "[语音]",
+  "chatMessageBriefVideo": "[视频]",
+  "chatMessageBriefLocation": "[地理位置]",
+  "chatMessageBriefFile": "[文件]",
+  "chatMessageBriefCustom": "[自定义消息]",
+  "chatMessageBriefChatHistory": "[聊天记录]",
+  "chatSetting": "聊天设置",
+  "chatMessageSignal": "标记",
+  "chatMessageOpenMessageNotice": "开启消息提醒",
+  "chatMessageSetTop": "聊天置顶",
+  "chatMessageSetPin": "PIN置顶",
+  "chatMessageSend": "发送",
+  "chatAdviceTeamNotifyInvite": "{user} 邀请{members}加入群组",
+  "@chatAdviceTeamNotifyInvite": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyInvite": "{user}邀请{members}加入讨论组",
+  "@chatDiscussTeamNotifyInvite": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyRemove": "{users}已被移出讨论组",
+  "@chatDiscussTeamNotifyRemove": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatAdvancedTeamNotifyRemove": "{users}已被移出群",
+  "@chatAdvancedTeamNotifyRemove": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyLeave": "{users}离开了讨论组",
+  "@chatDiscussTeamNotifyLeave": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatAdvancedTeamNotifyLeave": "{user} 退出了群聊",
+  "@chatAdvancedTeamNotifyLeave": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyDismiss": "{users}解散了群",
+  "@chatTeamNotifyDismiss": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyManagerPass": "管理员通过用户{members}的入群申请",
+  "@chatTeamNotifyManagerPass": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyTransOwner": "{user}将群转移给{members}",
+  "@chatTeamNotifyTransOwner": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyAddManager": "{member}被任命为管理员",
+  "@chatTeamNotifyAddManager": {
+    "placeholders": {
+      "member": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyRemoveManager": "{member}被撤销管理员身份",
+  "@chatTeamNotifyRemoveManager": {
+    "placeholders": {
+      "member": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyAcceptInvite": "{user}接受了{members}的入群邀请",
+  "@chatTeamNotifyAcceptInvite": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyMute": "{user}被管理员禁言",
+  "@chatTeamNotifyMute": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUnMute": "{user}被管理员解除禁言",
+  "@chatTeamNotifyUnMute": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageUnknownNotification": "未知通知",
+  "chatTeamNotifyUpdateName": "{user} 更新群名称为\"{name}\"",
+  "@chatTeamNotifyUpdateName": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateIntroduction": "{user} 更新了群介绍",
+  "@chatTeamNotifyUpdateIntroduction": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNoticeUpdate": "群公告变更为{notice}",
+  "@chatTeamNoticeUpdate": {
+    "placeholders": {
+      "notice": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsNeedVerify": "{name}开启了入群审核",
+  "@chatTeamVerifyUpdateAsNeedVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsNeedNoVerify": "{name}关闭了入群审核",
+  "@chatTeamVerifyUpdateAsNeedNoVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInviteUpdateAsNeedVerify": "{name}开启了入群邀请需要同意",
+  "@chatTeamInviteUpdateAsNeedVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInviteUpdateAsNeedNoVerify": "{name}关闭了入群邀请需要同意",
+  "@chatTeamInviteUpdateAsNeedNoVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsDisallowAnyoneJoin": "群身份验证权限更新为不容许任何人申请加入",
+  "chatTeamNotifyUpdateExtension": "扩展字段被更新为{name}",
+  "@chatTeamNotifyUpdateExtension": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateExtensionServer": "扩展字段（服务器）被更新为{name}",
+  "@chatTeamNotifyUpdateExtensionServer": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateTeamAvatar": "{user} 更新了群头像",
+  "@chatTeamNotifyUpdateTeamAvatar": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInvitationPermissionUpdate": "{user} 更新了群权限\"邀请他人权限\"为\"{permission}\"",
+  "@chatTeamInvitationPermissionUpdate": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamModifyResourcePermissionUpdate": "{user} 更新了群权限\"群资料修改权限\"为\"{permission}\"",
+  "@chatTeamModifyResourcePermissionUpdate": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInvitedIdVerifyPermissionUpdate": "群被邀请人身份验证权限被更新为{permission}",
+  "@chatTeamInvitedIdVerifyPermissionUpdate": {
+    "placeholders": {
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamModifyExtensionPermissionUpdate": "群扩展字段修改权限被更新为{permission}",
+  "@chatTeamModifyExtensionPermissionUpdate": {
+    "placeholders": {
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamAllMute": "当前群主设置为禁言",
+  "chatTeamCancelAllMute": "群禁言已关闭",
+  "chatTeamFullMute": "群禁言已开启",
+  "chatTeamUpdate": "群{key}被更新为{value}",
+  "@chatTeamUpdate": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageYou": "你",
+  "messageSearchTitle": "历史记录",
+  "messageSearchHint": "搜索聊天内容",
+  "messageSearchEmpty": "暂无聊天记录",
+  "messageForwardToP2p": "转发到个人",
+  "messageForwardToTeam": "转发到群组",
+  "messageForwardTo": "发送给",
+  "messageCancel": "取消",
+  "messageForwardMessageTips": "[转发]{user}的会话记录",
+  "@messageForwardMessageTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "messageReadStatus": "消息阅读状态",
+  "messageReadWithNumber": "已读({num})",
+  "@messageReadWithNumber": {
+    "placeholders": {
+      "num": {
+        "type": "String"
+      }
+    }
+  },
+  "messageUnreadWithNumber": "未读({num})",
+  "@messageUnreadWithNumber": {
+    "placeholders": {
+      "num": {
+        "type": "String"
+      }
+    }
+  },
+  "messageAllRead": "全部成员已读",
+  "messageAllUnread": "全部成员未读",
+  "chatIsTyping": "正在输入中...",
+  "chatMessageAitContactTitle": "选择提醒",
+  "chatTeamAitAll": "所有人",
+  "chatMessageFileSizeOverLimit": "当前文件大小超出{size}M发送限制，请重新选择",
+  "@chatMessageFileSizeOverLimit": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamPermissionInviteAll": "所有人",
+  "chatTeamPermissionInviteOnlyOwner": "仅群主",
+  "chatTeamPermissionUpdateAll": "所有人",
+  "chatTeamPermissionUpdateOnlyOwner": "仅群主",
+  "microphoneDeniedTips": "请在设置页面添加麦克风权限",
+  "locationDeniedTips": "请在设置页面添加定位权限",
+  "chatSpeakTooShort": "说话时间太短",
+  "chatTeamBeRemovedTitle": "提醒",
+  "chatTeamBeRemovedContent": "该群聊已被解散",
+  "chatMessageSendFailedByBlackList": "对方已将您拉黑，消息发送失败",
+  "chatHaveNoPinMessage": "暂无标记消息",
+  "chatMessageMergeForward": "合并转发",
+  "chatMessageItemsForward": "逐条转发",
+  "chatMessageMergedTitle": "{user}的消息",
+  "@chatMessageMergedTitle": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageChatHistory": "聊天记录",
+  "chatMessagePostScript": "留言",
+  "chatMessageMergeMessageError": "系统异常，转发失败",
+  "chatMessageInputTitle": "请输入标题",
+  "chatMessageNotSupportEmptyMessage": "不支持发送空消息",
+  "chatMessageMergedForwardLimitOut": "合并转发限制{number}条消息",
+  "@chatMessageMergedForwardLimitOut": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageForwardOneByOneLimitOut": "逐条转发限制{number}条消息",
+  "@chatMessageForwardOneByOneLimitOut": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "messageForwardMessageOneByOneTips": "[逐条转发]{user}的会话记录",
+  "@messageForwardMessageOneByOneTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "messageForwardMessageMergedTips": "[合并转发]{user}的会话记录",
+  "@messageForwardMessageMergedTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageHaveMessageCantForward": "存在不可转发的消息体",
+  "chatMessageInfoError": "信息获取失败",
+  "chatMessageMergeDepthOut": "存在超出合并限制的消息，无法合并转发，是否去除后发送?",
+  "chatMessageExitMessageCannotForward": "存在不可转发的消息体",
+  "chatTeamPermissionInviteOnlyOwnerAndManagers": "群主和管理员",
+  "chatTeamPermissionUpdateOnlyOwnerAndManagers": "群主和管理员",
+  "chatTeamHaveBeenKick": "您已被移除群聊",
+  "chatMessageHaveCannotForwardMessages": "存在不可转发的消息体，是否去除后发送？",
+  "teamMsgAitAllPrivilegeIsAll": "@所有人权限更新为所有人",
+  "teamMsgAitAllPrivilegeIsOwner": "@所有人权限更新为群主和管理员",
+  "chatMessagePinLimitTips": "已超出pin数量上限",
+  "chatMessageRemovedTip": "该消息已撤回或删除",
+  "chatAiSearchError": "模型请求异常",
+  "chatAiMessageTypeUnsupport": "暂不支持该格式",
+  "chatAiErrorUserNotExist": "用户不存在",
+  "chatAiErrorFailedRequestToTheLlm": "请求大语言模型失败",
+  "chatAiErrorAiMessagesFunctionDisabled": "AI消息功能未开通",
+  "chatAiErrorUserBanned": "用户被禁用",
+  "chatAiErrorUserChatBanned": "用户被禁言",
+  "chatAiErrorMessageHitAntispam": "消息命中反垃圾",
+  "chatAiErrorNotAnAiAccount": "不是数字人账号",
+  "chatAiErrorTeamMemberNotExist": "群成员不存在",
+  "chatAiErrorTeamNormalMemberChatBanned": "群普通成员禁言",
+  "chatAiErrorTeamMemberChatBanned": "群成员被禁言",
+  "chatAiErrorCannotBlocklistAnAiAccount": "不允许对数字人进行黑名单操作",
+  "chatAiErrorRateLimitExceeded": "频率超限",
+  "chatAiErrorParameter": "参数错误",
+  "chatUserOnline": "[在线]",
+  "chatUserOffline": "[离线]",
+  "forwardSelect": "选择",
+  "multiSelect": "多选",
+  "forwardSearch": "搜索",
+  "forwardRecentForward": "最近转发",
+  "forwardRecentConversation": "最近会话",
+  "forwardMyFriends": "我的好友",
+  "forwardTeam": "我的群聊",
+  "forwardConversationEmpty": "暂无会话",
+  "forwardContactEmpty": "暂无好友",
+  "forwardTeamEmpty": "暂无群组",
+  "messageSure": "确定",
+  "chatMessageCallError": "呼叫出错",
+  "chatMessageCopyNumber": "复制号码",
+  "chatMessageCall": "呼叫",
+  "messagePhoneCallTips": "{number}可能是一个电话号码，你可以",
+  "@messagePhoneCallTips": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "searchResultEmpty": "未搜索到{keyword}相关结果",
+  "@searchResultEmpty": {
+    "placeholders": {
+      "keyword": {
+        "type": "String"
+      }
+    }
+  },
+  "maxSelectConversationLimit": "最多只能选择{number}个会话",
+  "@maxSelectConversationLimit": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "webConnectError": "页面加载失败",
+  "chatMessageCallFile": "音视频通话",
+  "chatMessageVideoCallAction": "视频通话",
+  "chatMessageAudioCallAction": "语音通话",
+  "chatMessageBriefVideoCall": "[视频通话]",
+  "chatMessageBriefAudioCall": "[语音通话]",
+  "chatMessageAudioCallText": "[语音通话]",
+  "chatMessageVideoCallText": "[视频通话]",
+  "chatMessageCallCancel": "已取消",
+  "chatMessageCallRefused": "已拒绝",
+  "chatMessageCallTimeout": "未接听",
+  "chatMessageCallBusy": "忙线未接听",
+  "chatMessageCallCompleted": "通话时长",
+  "chatVoiceFromSpeaker": "扬声器",
+  "chatVoiceFromEarSpeaker": "听筒播放",
+  "chatVoiceFromSpeakerTips": "扬声器播放",
+  "chatVoiceFromEarSpeakerTips": "切换听筒播放模式，请贴近手机聆听",
+  "chatBeenBlockByOthers": "您已被对方拉黑",
+  "chatPermissionSystemCheck": "权限获取失败，请前往系统设置页面设置",
+  "permissionCameraTitle":"相机权限使用说明",
+  "permissionCameraContent":"用户拍照，视频录制， 视频通话等场景",
+  "permissionStorageTitle":"存储权限使用说明",
+  "permissionStorageContent":"用户发送文件、图片、视频等场景",
+  "permissionAudioTitle":"麦克风权限使用说明",
+  "permissionAudioContent":"用户录制， 音频通话等场景"
+}

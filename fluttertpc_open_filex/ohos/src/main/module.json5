@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "open_filex",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

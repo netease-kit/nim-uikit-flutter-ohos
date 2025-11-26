@@ -1,0 +1,18 @@
+{
+  "@@locale": "en",
+  "networkErrorTip": "The current network is unavailable, please check your network settings.",
+  "sure": "OK",
+  "cancel": "Cancel",
+  "takePhoto": "Take photo",
+  "choosePhoto": "Choose photo",
+  "permissionRequestTip": "Please add permissions on the settings page",
+  "webConnectError": "Web view loading error",
+  "imagePickerRecent": "Recent",
+  "imagePickerCamera": "Camera",
+  "imagePickerScreenshots": "Screenshots",
+  "permissionCameraTitle":"The camera is used for",
+  "permissionCameraContent":"Photo-taking, video records, video calls, ...",
+  "permissionStorageTitle":"The storage is used for",
+  "permissionStorageContent":"Files, photos, videos, ...",
+  "permissionSystemCheck": "Failed to get permission. Please go to system settings to grant it."
+}

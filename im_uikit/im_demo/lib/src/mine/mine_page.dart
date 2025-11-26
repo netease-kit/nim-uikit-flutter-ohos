@@ -1,0 +1,199 @@
+// Copyright (c) 2022 NetEase, Inc. All rights reserved.
+// Use of this source code is governed by a MIT license that can be
+// found in the LICENSE file.
+
+import 'dart:async';
+
+import 'package:netease_common_ui/ui/avatar.dart';
+import 'package:netease_common_ui/utils/color_utils.dart';
+import 'package:nim_chatkit/service_locator.dart';
+import 'package:nim_chatkit/services/login/im_login_service.dart';
+import 'package:flutter/material.dart';
+import 'package:im_demo/l10n/S.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:im_demo/src/mine/about.dart';
+import 'package:im_demo/src/mine/setting/mine_setting.dart';
+import 'package:im_demo/src/mine/user_info_page.dart';
+import 'package:nim_core_v2/nim_core.dart';
+import 'package:nim_chatkit/repo/config_repo.dart';
+
+class MinePage extends StatefulWidget {
+  const MinePage({Key? key}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() => _MinePageState();
+}
+
+class _MinePageState extends State<MinePage> {
+  NIMUserInfo? _userInfo;
+
+  IMLoginService _loginService = getIt<IMLoginService>();
+
+  List<StreamSubscription> _subs = [];
+
+  @override
+  void initState() {
+    super.initState();
+
+    //数据同步完成之后再请求更新信息
+
+    _refreshUserInfo();
+
+    _subs.addAll([
+      NimCore.instance.loginService.onDataSync.listen((event) {
+        if (event.type == NIMDataSyncType.nimDataSyncMain &&
+            event.state == NIMDataSyncState.nimDataSyncStateCompleted) {
+          _refreshUserInfo();
+        }
+      }),
+      NimCore.instance.userService.onUserProfileChanged.listen((event) {
+        for (var user in event) {
+          if (user.accountId == _userInfo?.accountId) {
+            _userInfo = user;
+            setState(() {});
+          }
+        }
+      })
+    ]);
+  }
+
+  void _refreshUserInfo() {
+    _loginService.getUserInfo().then((value) {
+      setState(() {
+        _userInfo = value;
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    _subs.length > 0 ? _subs.forEach((element) => element.cancel()) : null;
+    _subs.clear();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Widget arrow = SvgPicture.asset(
+      'assets/ic_right_arrow.svg',
+      height: 16,
+      width: 16,
+    );
+
+    var nick = _loginService.userInfo?.name?.trim().isNotEmpty == true
+        ? _loginService.userInfo?.name?.trim()
+        : null;
+    return Container(
+      color: Colors.white,
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 56,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const UserInfoPage()))
+                  .then((value) {
+                setState(() {});
+              });
+            },
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 36),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Avatar(
+                    height: 60,
+                    width: 60,
+                    name: _loginService.userInfo?.name ?? _userInfo?.name,
+                    fontSize: 22,
+                    avatar: _loginService.userInfo?.avatar ?? _userInfo?.avatar,
+                  ),
+                  const SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          nick ?? _loginService.userInfo?.accountId ?? '',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                              fontSize: 22,
+                              color: CommonColors.color_333333,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        const SizedBox(
+                          height: 2,
+                        ),
+                        Text(
+                          S.of(context).tabMineAccount(
+                              _loginService.userInfo?.accountId ?? ''),
+                          style: const TextStyle(
+                              fontSize: 16, color: CommonColors.color_333333),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 36.0),
+                    child: arrow,
+                  )
+                ],
+              ),
+            ),
+          ),
+          const Divider(
+            height: 6,
+            thickness: 6,
+            color: Color(0xffeff1f4),
+          ),
+          ...ListTile.divideTiles(context: context, tiles: [
+            Visibility(
+              visible: false,
+              child: ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+                leading: SvgPicture.asset('assets/ic_collect.svg'),
+                title: Text(S.of(context).mineCollect),
+                trailing: arrow,
+                onTap: () {
+                  // todo collect
+                },
+              ),
+            ),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+              leading: SvgPicture.asset('assets/ic_about.svg'),
+              title: Text(S.of(context).mineAbout),
+              trailing: arrow,
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const AboutPage()));
+              },
+            ),
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+              leading: SvgPicture.asset('assets/ic_user_setting.svg'),
+              title: Text(S.of(context).mineSetting),
+              trailing: arrow,
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MineSettingPage()));
+              },
+            ),
+          ]).toList(),
+        ],
+      ),
+    );
+  }
+}

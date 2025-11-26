@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "messageCancel": "Cancel",
+  "chatMessageSend": "Send",
+  "chatMessageAMapNotFound": "ALi Map not found",
+  "chatMessageTencentMapNotFound": "Tencent Map not found",
+  "chatMessageAMap": "ALi Map",
+  "chatMessageTencentMap": "Tencent Map",
+  "locationDeniedTips": "Please give your location permission",
+  "locationTitle": "Location"
+}

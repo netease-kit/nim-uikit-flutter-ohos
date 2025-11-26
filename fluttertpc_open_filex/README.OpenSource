@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "open_file",
+        "License": "BSD-3-Clause License",
+        "License File": "LICENSE",
+        "Version Number": "c44fa568964f4caa96c04687939df0b28c48eb29",
+        "Owner": "george.lihui@huawei.com",
+        "Upstream URL": "https://github.com/javaherisaber/open_file",
+        "Description": "A plug-in that can call native APP to open files with string result in flutter, support iOS(UTI) / android(intent) / PC(ffi) / web(dart:html)."
+    }
+]
