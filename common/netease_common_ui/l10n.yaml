@@ -1,0 +1,9 @@
+arb-dir: lib/l10n
+output-dir: lib/l10n/common_localization
+template-arb-file: intl_en.arb
+output-localization-file: common_kit_client_localizations.dart
+output-class: CommonKitClientLocalizations
+header-file: header.txt
+synthetic-package: false
+untranslated-messages-file: untranslated.txt
+format: true

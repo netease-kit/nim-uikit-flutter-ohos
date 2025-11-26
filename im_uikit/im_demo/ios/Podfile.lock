@@ -1,0 +1,289 @@
+PODS:
+  - audioplayers_darwin (0.0.1):
+    - Flutter
+  - connectivity_plus (0.0.1):
+    - Flutter
+    - ReachabilitySwift
+  - device_info_plus (0.0.1):
+    - Flutter
+  - DKImagePickerController/Core (4.3.9):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.9)
+  - DKImagePickerController/PhotoGallery (4.3.9):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.9)
+  - DKPhotoGallery (0.0.19):
+    - DKPhotoGallery/Core (= 0.0.19)
+    - DKPhotoGallery/Model (= 0.0.19)
+    - DKPhotoGallery/Preview (= 0.0.19)
+    - DKPhotoGallery/Resource (= 0.0.19)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_sound (9.28.0):
+    - Flutter
+    - flutter_sound_core (= 9.28.0)
+  - flutter_sound_core (9.28.0)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - FMDB (2.7.12):
+    - FMDB/standard (= 2.7.12)
+  - FMDB/Core (2.7.12)
+  - FMDB/standard (2.7.12):
+    - FMDB/Core
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - image_gallery_saver (2.0.2):
+    - Flutter
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - NECommonKit (9.7.4):
+    - YXAlog
+  - NECoreKit (9.8.0):
+    - YXAlog
+  - NERtcCallKit/FCS_Special (3.7.1):
+    - NECommonKit
+    - NECoreKit
+    - NEXKitBase
+    - NIMSDK_LITE/FCS
+  - NERtcSDK (5.9.10):
+    - NERtcSDK/AiDenoise (= 5.9.10)
+    - NERtcSDK/AiHowling (= 5.9.10)
+    - NERtcSDK/Beauty (= 5.9.10)
+    - NERtcSDK/FaceDetect (= 5.9.10)
+    - NERtcSDK/FaceEnhance (= 5.9.10)
+    - NERtcSDK/Nenn (= 5.9.10)
+    - NERtcSDK/RtcBasic (= 5.9.10)
+    - NERtcSDK/ScreenShare (= 5.9.10)
+    - NERtcSDK/Segment (= 5.9.10)
+    - NERtcSDK/SpatialSound (= 5.9.10)
+    - NERtcSDK/SuperResolution (= 5.9.10)
+    - NERtcSDK/VideoDenoise (= 5.9.10)
+  - NERtcSDK/AiDenoise (5.9.10)
+  - NERtcSDK/AiHowling (5.9.10)
+  - NERtcSDK/Beauty (5.9.10)
+  - NERtcSDK/FaceDetect (5.9.10)
+  - NERtcSDK/FaceEnhance (5.9.10)
+  - NERtcSDK/Nenn (5.9.10)
+  - NERtcSDK/RtcBasic (5.9.10)
+  - NERtcSDK/ScreenShare (5.9.10)
+  - NERtcSDK/Segment (5.9.10)
+  - NERtcSDK/SpatialSound (5.9.10)
+  - NERtcSDK/SuperResolution (5.9.10)
+  - NERtcSDK/VideoDenoise (5.9.10)
+  - netease_callkit (0.0.1):
+    - Flutter
+    - NERtcCallKit/FCS_Special (= 3.7.1)
+    - NERtcSDK (= 5.9.10)
+  - netease_callkit_ui (0.0.1):
+    - Flutter
+    - NERtcCallKit/FCS_Special (= 3.7.1)
+    - NERtcSDK (= 5.9.10)
+    - SDWebImage
+    - SnapKit
+  - NEXKitBase (1.0.0)
+  - nim_core_v2 (10.9.40):
+    - Flutter
+    - NIMSDK_LITE/FCS (= 10.9.52)
+    - NIMSDK_LITE/FTS (= 10.9.52)
+    - YXAlog
+  - NIMSDK_LITE/FCS (10.9.52):
+    - YXArtemis_XCFramework
+  - NIMSDK_LITE/FTS (10.9.52):
+    - YXArtemis_XCFramework
+  - open_filex (0.0.2):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.3.0):
+    - Flutter
+  - photo_manager (3.7.1):
+    - Flutter
+    - FlutterMacOS
+  - ReachabilitySwift (5.2.4)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - SnapKit (5.7.1)
+  - sqflite (0.0.2):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - SwiftyGif (5.4.5)
+  - Toast (4.1.1)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - video_player_avfoundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+  - yunxin_alog (0.0.1):
+    - Flutter
+    - YXAlog (~> 1.0.8)
+  - YXAlog (1.0.10)
+  - YXArtemis_XCFramework (1.1.6)
+
+DEPENDENCIES:
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
+  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
+  - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_sound (from `.symlinks/plugins/flutter_sound/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - GCDWebServer (= 3.5.4)
+  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - netease_callkit (from `.symlinks/plugins/netease_callkit/ios`)
+  - netease_callkit_ui (from `.symlinks/plugins/netease_callkit_ui/ios`)
+  - nim_core_v2 (from `.symlinks/plugins/nim_core_v2/ios`)
+  - open_filex (from `.symlinks/plugins/open_filex/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - photo_manager (from `.symlinks/plugins/photo_manager/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
+  - yunxin_alog (from `.symlinks/plugins/yunxin_alog/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DKImagePickerController
+    - DKPhotoGallery
+    - flutter_sound_core
+    - FMDB
+    - GCDWebServer
+    - NECommonKit
+    - NECoreKit
+    - NERtcCallKit
+    - NERtcSDK
+    - NEXKitBase
+    - NIMSDK_LITE
+    - ReachabilitySwift
+    - SDWebImage
+    - SnapKit
+    - SwiftyGif
+    - Toast
+    - YXAlog
+    - YXArtemis_XCFramework
+
+EXTERNAL SOURCES:
+  audioplayers_darwin:
+    :path: ".symlinks/plugins/audioplayers_darwin/ios"
+  connectivity_plus:
+    :path: ".symlinks/plugins/connectivity_plus/ios"
+  device_info_plus:
+    :path: ".symlinks/plugins/device_info_plus/ios"
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  Flutter:
+    :path: Flutter
+  flutter_sound:
+    :path: ".symlinks/plugins/flutter_sound/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  image_gallery_saver:
+    :path: ".symlinks/plugins/image_gallery_saver/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  netease_callkit:
+    :path: ".symlinks/plugins/netease_callkit/ios"
+  netease_callkit_ui:
+    :path: ".symlinks/plugins/netease_callkit_ui/ios"
+  nim_core_v2:
+    :path: ".symlinks/plugins/nim_core_v2/ios"
+  open_filex:
+    :path: ".symlinks/plugins/open_filex/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  photo_manager:
+    :path: ".symlinks/plugins/photo_manager/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  video_player_avfoundation:
+    :path: ".symlinks/plugins/video_player_avfoundation/darwin"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
+  yunxin_alog:
+    :path: ".symlinks/plugins/yunxin_alog/ios"
+
+SPEC CHECKSUMS:
+  audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
+  connectivity_plus: bf0076dd84a130856aa636df1c71ccaff908fa1d
+  device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
+  DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
+  DKPhotoGallery: b3834fecb755ee09a593d7c9e389d8b5d6deed60
+  file_picker: b159e0c068aef54932bb15dc9fd1571818edaf49
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_sound: 82aba29055d6feba684d08906e0623217b87bcd3
+  flutter_sound_core: 427465f72d07ab8c3edbe8ffdde709ddacd3763c
+  fluttertoast: 31b00dabfa7fb7bacd9e7dbee580d7a2ff4bf265
+  FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
+  image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
+  NECommonKit: 86a79422126d62d9dbf9cfab09789ef5ec805a21
+  NECoreKit: 6f8c18b90a94c22be46a77098ffb2669ae18c263
+  NERtcCallKit: a660958ea8ae6273fd09db2fec7551798ba3b9ba
+  NERtcSDK: 1b4a74dc1bd941ab2193407070c3dc537cacd314
+  netease_callkit: 72464e8e11aba76a85bcfbf0eaff0ad0383d0ed1
+  netease_callkit_ui: b03bd47fbac0e767dc725ddea06f6aa06358fbf9
+  NEXKitBase: 36fa740f92af6b8565cd6038f6e63b67037ae1a8
+  nim_core_v2: 4acfe6a0ea1fc439f3feaf8d84c2c2f990783866
+  NIMSDK_LITE: dfefccd874ae111a49c59a93997fc1e69b721f30
+  open_filex: 6e26e659846ec990262224a12ef1c528bb4edbe4
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  photo_manager: 81954a1bf804b6e882d0453b3b6bc7fad7b47d3d
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
+  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
+  webview_flutter_wkwebview: 4f3e50f7273d31e5500066ed267e3ae4309c5ae4
+  yunxin_alog: b5dcdcf4ca3315de7be7e3b52f91e608dae5680f
+  YXAlog: 02cad3f1e942bed69a95ff4ddbf41e4ee9d713bf
+  YXArtemis_XCFramework: d9a8b9439d7a6c757ed00ada53a6d2dd9b13f9c7
+
+PODFILE CHECKSUM: 5a1e83d66eb7b62efcd4038d6fdd5e53c0c63aa8
+
+COCOAPODS: 1.15.2

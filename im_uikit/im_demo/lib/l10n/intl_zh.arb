@@ -1,0 +1,81 @@
+{
+  "@@locale": "zh",
+  "appName": "云信IM",
+  "yunxinName": "网易云信",
+  "yunxinDesc": "真正稳定的IM 云服务",
+  "welcomeButton": "注册/登录",
+  "message": "消息",
+  "contact": "通讯录",
+  "mine": "我的",
+  "conversation": "会话列表",
+  "dataIsLoading": "数据加载中...",
+  "tabMineAccount": "账号:{account}",
+  "@tabMineAccount": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "mineCollect": "收藏",
+  "mineAbout": "关于云信",
+  "mineSetting": "设置",
+  "mineVersion": "版本号",
+  "mineProduct": "产品介绍",
+  "userInfoTitle": "个人信息",
+  "userInfoAvatar": "头像",
+  "userInfoAccount": "账号",
+  "userInfoNickname": "昵称",
+  "userInfoSexual": "性别",
+  "userInfoBirthday": "生日",
+  "userInfoPhone": "手机",
+  "userInfoEmail": "邮箱",
+  "userInfoSign": "个性签名",
+  "actionCopySuccess": "复制成功！",
+  "sexualMale": "男",
+  "sexualFemale": "女",
+  "sexualUnknown": "未知",
+  "userInfoComplete": "完成",
+  "requestFail": "操作失败",
+  "mineLogout": "退出登录",
+  "logoutDialogContent": "确认注销当前登录账号？",
+  "logoutDialogAgree": "是",
+  "logoutDialogDisagree": "否",
+  "settingNotify": "消息提醒",
+  "settingClearCache": "清理缓存",
+  "settingPlayMode": "听筒模式",
+  "settingFilterNotify": "过滤通知",
+  "settingFriendDeleteMode": "删除好友是否同步删除备注",
+  "settingMessageReadMode": "消息已读未读功能",
+  "settingNotifyInfo": "新消息通知",
+  "settingNotifyMode": "消息提醒方式",
+  "settingNotifyModeRing": "响铃模式",
+  "settingNotifyModeShake": "震动模式",
+  "settingNotifyPush": "推送设置",
+  "settingNotifyPushSync": "PC/Web同步接收推送",
+  "settingNotifyPushDetail": "通知栏不显示消息详情",
+  "clearMessage": "清理所有聊天记录",
+  "clearSdkCache": "清理SDK文件缓存",
+  "clearMessageTips": "聊天记录已清理",
+  "cacheSizeText": "{size} M",
+  "@cacheSizeText": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "notUsable": "功能暂未开放",
+  "settingFail": "设置失败",
+  "settingSuccess": "设置成功",
+  "customMessage": "[自定义消息]",
+  "localConversation": "本地会话",
+  "settingAndResetTips": "设置成功，重启后生效",
+  "swindleTips": "仅用于体验云信IM 产品功能，请勿轻信汇款、中奖等涉及钱款的信息，勿轻易拨打陌生电话，谨防上当受骗。",
+  "aiStreamMode": "AI数字人流式输出",
+  "language": "语言",
+  "languageChinese": "中文",
+  "languageEnglish": "English",
+  "save": "保存",
+  "kickedOff": "您已被踢下线"
+}

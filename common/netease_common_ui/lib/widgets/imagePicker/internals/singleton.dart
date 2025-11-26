@@ -1,0 +1,22 @@
+// Copyright (c) 2022 NetEase, Inc. All rights reserved.
+// Use of this source code is governed by a MIT license that can be
+// found in the LICENSE file.
+
+import 'package:flutter/widgets.dart';
+
+import '../delegates/asset_picker_text_delegate.dart';
+import '../delegates/sort_path_delegate.dart';
+
+/// Define an inner static singleton for picker libraries.
+class Singleton {
+  const Singleton._();
+
+  static AssetPickerTextDelegate textDelegate = const AssetPickerTextDelegate();
+  static SortPathDelegate<dynamic> sortPathDelegate = SortPathDelegate.common;
+
+  /// The last scroll position where the picker scrolled.
+  ///
+  /// See also:
+  ///  * [AssetPickerBuilderDelegate.keepScrollOffset]
+  static ScrollPosition? scrollPosition;
+}

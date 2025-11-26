@@ -1,0 +1,548 @@
+{
+  "@@locale": "en",
+  "chatMessageSendHint": "Send to {userName}",
+  "@chatMessageSendHint": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatPressedToSpeak": "Pressed to speak",
+  "chatMessageVoiceIn": "Release to send, hold and swipe to an empty area to cancel",
+  "chatMessagePickPhoto": "Pick photo",
+  "chatMessagePickVideo": "Pick video",
+  "chatMessageMoreShoot": "Shooting",
+  "chatMessageTakePhoto": "Take photo",
+  "chatMessageTakeVideo": "Take video",
+  "chatMessageNonsupport": "Nonsupport message Type",
+  "chatMessageMoreFile": "File",
+  "chatMessageMoreTranslate": "Translate",
+  "chatTranslateTo": "Translate to",
+  "chatTranslateSure": "AI Translate",
+  "chatTranslating": "AI Translating...",
+  "chatTranslateUse": "Translate to",
+  "chatTranslateLanguageTitle": "Use↓",
+  "chatMessageMoreLocation": "Location",
+  "chatMessageAMapNotFound": "ALi Map not found",
+  "chatMessageTencentMapNotFound": "Tencent Map not found",
+  "chatMessageAMap": "ALi Map",
+  "chatMessageTencentMap": "Tencent Map",
+  "chatMessageUnknownType": "Unknown Type",
+  "chatMessageImageSave": "Image saved successfully",
+  "chatMessageImageSaveFail": "Failed to save image",
+  "chatMessageVideoSave": "Video saved successfully",
+  "chatMessageVideoSaveFail": "Failed to save video",
+  "chatMessageActionCopy": "copy",
+  "chatMessageActionReply": "reply",
+  "chatMessageActionForward": "forward",
+  "chatMessageActionPin": "pin",
+  "chatMessageActionUnPin": "unPin",
+  "chatMessageActionMultiSelect": "multiSelect",
+  "chatMessageActionCollect": "collect",
+  "chatMessageActionDelete": "delete",
+  "chatMessageActionRevoke": "revoke",
+  "chatMessageCopySuccess": "Copy Success",
+  "chatMessageCollectSuccess": "Collect Success",
+  "chatMessageDeleteConfirm": "Delete this message?",
+  "chatMessageRevokeConfirm": "Revoke this message?",
+  "chatMessageHaveBeenRevokedOrDelete": "this message have been revoked or deleted",
+  "chatMessagePinMessage": "Pined by {userName}，visible to both of you",
+  "@chatMessagePinMessage": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessagePinMessageForTeam": "Pined by {userName}，visible to everyone",
+  "@chatMessagePinMessageForTeam": {
+    "placeholders": {
+      "userName": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageHaveBeenRevoked": "Message revoked",
+  "chatMessageReedit": " Reedit >",
+  "chatMessageRevokeOverTime": "Over Time,Revoke failed",
+  "chatMessageRevokeFailed": "Revoke failed",
+  "chatMessageReplySomeone": "Reply {content}",
+  "@chatMessageReplySomeone": {
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageBriefImage": "[Image]",
+  "chatMessageBriefAudio": "[Audio]",
+  "chatMessageBriefVideo": "[Video]",
+  "chatMessageBriefLocation": "[Location]",
+  "chatMessageBriefFile": "[File]",
+  "chatMessageBriefCustom": "[Custom Message]",
+  "chatMessageBriefChatHistory": "[Chat History]",
+  "chatSetting": "Chat setting",
+  "chatMessageSignal": "Message mark",
+  "chatMessageOpenMessageNotice": "Open message notice",
+  "chatMessageSetTop": "Set session top",
+  "chatMessageSetPin": "PIN",
+  "chatMessageSend": "Send",
+  "chatAdviceTeamNotifyInvite": "{user} had invited {members} to join the team",
+  "@chatAdviceTeamNotifyInvite": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyInvite": "{user} invited {members} join discuss team",
+  "@chatDiscussTeamNotifyInvite": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyRemove": "{users} have been removed from discuss team",
+  "@chatDiscussTeamNotifyRemove": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatAdvancedTeamNotifyRemove": "{users} have been removed from team",
+  "@chatAdvancedTeamNotifyRemove": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDiscussTeamNotifyLeave": "{users}have left discuss team",
+  "@chatDiscussTeamNotifyLeave": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatAdvancedTeamNotifyLeave": "{user} had exited team",
+  "@chatAdvancedTeamNotifyLeave": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyDismiss": "{users}dismissed team",
+  "@chatTeamNotifyDismiss": {
+    "placeholders": {
+      "users": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyManagerPass": "Manager accepted {members} team apply",
+  "@chatTeamNotifyManagerPass": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyTransOwner": "{user} transfer owner to {members}",
+  "@chatTeamNotifyTransOwner": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyAddManager": "{member} set as manager",
+  "@chatTeamNotifyAddManager": {
+    "placeholders": {
+      "member": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyRemoveManager": "{member}remove from managers",
+  "@chatTeamNotifyRemoveManager": {
+    "placeholders": {
+      "member": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyAcceptInvite": "{user} accept {members}'s invite and join",
+  "@chatTeamNotifyAcceptInvite": {
+    "placeholders": {
+      "members": {
+        "type": "String"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyMute": "{user} mute by manager",
+  "@chatTeamNotifyMute": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUnMute": "{user} un mute by manager",
+  "@chatTeamNotifyUnMute": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageUnknownNotification": "Unknown Notification",
+  "chatTeamNotifyUpdateName": "{user} had updated team name:\"{name}\"",
+  "@chatTeamNotifyUpdateName": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateIntroduction": "{user} had updated team introduction",
+  "@chatTeamNotifyUpdateIntroduction": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNoticeUpdate": "team announcement update as {notice}",
+  "@chatTeamNoticeUpdate": {
+    "placeholders": {
+      "notice": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsNeedVerify": "{name} enabled group join approval",
+  "@chatTeamVerifyUpdateAsNeedVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsNeedNoVerify": "{name} disabled group join approval",
+  "@chatTeamVerifyUpdateAsNeedNoVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInviteUpdateAsNeedVerify": "{name} enabled invitation approval for joining the group",
+  "@chatTeamInviteUpdateAsNeedVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInviteUpdateAsNeedNoVerify": "{name} disabled invitation approval for joining the group",
+  "@chatTeamInviteUpdateAsNeedNoVerify": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamVerifyUpdateAsDisallowAnyoneJoin": "update as disallow anyone join",
+  "chatTeamNotifyUpdateExtension": "team extension update as {name}",
+  "@chatTeamNotifyUpdateExtension": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateExtensionServer": "team extension (server) update as{name}",
+  "@chatTeamNotifyUpdateExtensionServer": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamNotifyUpdateTeamAvatar": "{user} had updated team avatar",
+  "@chatTeamNotifyUpdateTeamAvatar": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInvitationPermissionUpdate": "{user} had updated team invite permission:\"{permission}\"",
+  "@chatTeamInvitationPermissionUpdate": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamModifyResourcePermissionUpdate": "{user} had updated team resource permission: \"{permission}\"",
+  "@chatTeamModifyResourcePermissionUpdate": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      },
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamInvitedIdVerifyPermissionUpdate": "team invited verify update as {permission}",
+  "@chatTeamInvitedIdVerifyPermissionUpdate": {
+    "placeholders": {
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamModifyExtensionPermissionUpdate": "team extension update permission as {permission}",
+  "@chatTeamModifyExtensionPermissionUpdate": {
+    "placeholders": {
+      "permission": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamAllMute": "Mute",
+  "chatTeamCancelAllMute": "cancel all mute",
+  "chatTeamFullMute": "mute all",
+  "chatTeamUpdate": "team {key} updated as {value}",
+  "@chatTeamUpdate": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageYou": "you",
+  "messageSearchTitle": "Search History",
+  "messageSearchHint": "Search chat content",
+  "messageSearchEmpty": "No chat history",
+  "messageForwardToP2p": "Forward to person",
+  "messageForwardToTeam": "Forward to team",
+  "messageForwardTo": "Send to",
+  "messageCancel": "Cancel",
+  "messageForwardMessageTips": "[Forward]{user} message",
+  "@messageForwardMessageTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "messageReadStatus": "Message read status",
+  "messageReadWithNumber": "Read ({num})",
+  "@messageReadWithNumber": {
+    "placeholders": {
+      "num": {
+        "type": "String"
+      }
+    }
+  },
+  "messageUnreadWithNumber": "Unread ({num})",
+  "@messageUnreadWithNumber": {
+    "placeholders": {
+      "num": {
+        "type": "String"
+      }
+    }
+  },
+  "messageAllRead": "All member have read",
+  "messageAllUnread": "All member unread",
+  "chatIsTyping": "Is Typing",
+  "chatMessageAitContactTitle": "Choose a reminder",
+  "chatTeamAitAll": "All",
+  "chatMessageFileSizeOverLimit": "Oops! File size limit {size}M.",
+  "@chatMessageFileSizeOverLimit": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "chatTeamPermissionInviteAll": "all",
+  "chatTeamPermissionInviteOnlyOwner": "owner",
+  "chatTeamPermissionUpdateAll": "all",
+  "chatTeamPermissionUpdateOnlyOwner": "owner",
+  "microphoneDeniedTips": "Please give your phone micro permission",
+  "locationDeniedTips": "Please give your location permission",
+  "chatSpeakTooShort": "Talk too short",
+  "chatTeamBeRemovedTitle": "Tip",
+  "chatTeamBeRemovedContent": "This group is disbanded",
+  "chatMessageSendFailedByBlackList": "Send failed, you are in the blacklist",
+  "chatHaveNoPinMessage": "No pinned message",
+  "chatMessageMergeForward": "Merge Forward",
+  "chatMessageItemsForward": "Items Forward",
+  "chatMessageMergedTitle": "{user}History Message",
+  "@chatMessageMergedTitle": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageChatHistory": "Chat History",
+  "chatMessagePostScript": "Post Script",
+  "chatMessageMergeMessageError": "System Error，Forward Error",
+  "chatMessageInputTitle": "Input Title",
+  "chatMessageNotSupportEmptyMessage": "Not support empty message",
+  "chatMessageMergedForwardLimitOut": "Merge message limit{number}",
+  "@chatMessageMergedForwardLimitOut": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageForwardOneByOneLimitOut": "Forward message one by one limit{number}",
+  "@chatMessageForwardOneByOneLimitOut": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "messageForwardMessageOneByOneTips": "[Forward One by One]{user}Chat History",
+  "@messageForwardMessageOneByOneTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "messageForwardMessageMergedTips": "[Merged Forward]{user}Chat History",
+  "@messageForwardMessageMergedTips": {
+    "placeholders": {
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "chatMessageHaveMessageCantForward": "There are messages that cannot be forwarded",
+  "chatMessageInfoError": "Message info error",
+  "chatMessageMergeDepthOut": "The message exceeds the merging limit and cannot be forwarded as is. Should it be sent without merging?",
+  "chatMessageExitMessageCannotForward": "Exit message cannot be forwarded",
+  "chatTeamPermissionInviteOnlyOwnerAndManagers": "Owner and managers",
+  "chatTeamPermissionUpdateOnlyOwnerAndManagers": "Owner and managers",
+  "chatTeamHaveBeenKick": "You have been kicked",
+  "chatMessageHaveCannotForwardMessages": "There are messages that cannot be forwarded",
+  "teamMsgAitAllPrivilegeIsAll": "@All privilege update to all",
+  "teamMsgAitAllPrivilegeIsOwner": "@All privilege update to owner and manager",
+  "chatMessagePinLimitTips": "Number of pin reaches the limit.",
+  "chatMessageRemovedTip": "The message was removed.",
+  "chatAiSearchError": "AI error",
+  "chatAiMessageTypeUnsupport": "Unsupported format",
+  "chatAiErrorUserNotExist": "User does not exist",
+  "chatAiErrorFailedRequestToTheLlm": "Failed request to the language model",
+  "chatAiErrorAiMessagesFunctionDisabled": "AI messaging function not enabled",
+  "chatAiErrorUserBanned": "User banned",
+  "chatAiErrorUserChatBanned": "User chat banned",
+  "chatAiErrorMessageHitAntispam": "Message hit anti-spam",
+  "chatAiErrorNotAnAiAccount": "Not an AI account",
+  "chatAiErrorTeamMemberNotExist": "Team member does not exist",
+  "chatAiErrorTeamNormalMemberChatBanned": "Team normal member chat banned",
+  "chatAiErrorTeamMemberChatBanned": "Team member chat banned",
+  "chatAiErrorCannotBlocklistAnAiAccount": "Cannot blocklist an AI account",
+  "chatAiErrorRateLimitExceeded": "Rate limit exceeded",
+  "chatAiErrorParameter": "Parameter error",
+  "chatUserOnline": "[Online]",
+  "chatUserOffline": "[Offline]",
+  "forwardSelect": "Select",
+  "multiSelect": "Multi-Select",
+  "forwardSearch": "Search",
+  "forwardRecentForward": "Recent Forward",
+  "forwardRecentConversation": "Recent Chat",
+  "forwardMyFriends": "Friends",
+  "forwardTeam": "Teams",
+  "forwardConversationEmpty": "No Conversation",
+  "forwardContactEmpty": "No Friend",
+  "forwardTeamEmpty": "No Team",
+  "messageSure": "Sure",
+  "chatMessageCallError": "Call Error",
+  "chatMessageCopyNumber": "Copy Number",
+  "chatMessageCall": "Call",
+  "messagePhoneCallTips": "{number} Maybe a phone number,you can",
+  "@messagePhoneCallTips": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "searchResultEmpty": "Have no result for {keyword}",
+  "@searchResultEmpty": {
+    "placeholders": {
+      "keyword": {
+        "type": "String"
+      }
+    }
+  },
+  "maxSelectConversationLimit": "Can not select more than {number} chats",
+  "@maxSelectConversationLimit": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "webConnectError": "Web view loading error",
+  "chatMessageCallFile": "Call",
+  "chatMessageVideoCallAction": "Video Call",
+  "chatMessageAudioCallAction": "Voice Call",
+  "chatMessageBriefVideoCall": "[Video Call]",
+  "chatMessageBriefAudioCall": "[Voice Call]",
+  "chatMessageAudioCallText": "[Voice Call]",
+  "chatMessageVideoCallText": "[Video Call]",
+  "chatMessageCallCancel": "Canceled",
+  "chatMessageCallRefused": "Refused",
+  "chatMessageCallTimeout": "Time Out",
+  "chatMessageCallBusy": "Busy",
+  "chatMessageCallCompleted": "Call",
+  "chatVoiceFromSpeaker": "turn on speaker",
+  "chatVoiceFromEarSpeaker": "turn off speaker",
+  "chatVoiceFromSpeakerTips": "turn on speaker",
+  "chatVoiceFromEarSpeakerTips": "Switched to ear speaker，Move phone to ear to hear audio",
+  "chatBeenBlockByOthers": "You have been blocked.",
+  "chatPermissionSystemCheck": "Failed to get permission. Please go to system settings to grant it.",
+  "permissionCameraTitle":"The camera is used for",
+  "permissionCameraContent":"Photo-taking, video records, video calls, ...",
+  "permissionStorageTitle":"The storage is used for",
+  "permissionStorageContent":"Files, photos, videos, ...",
+  "permissionAudioTitle":"The micro is used for",
+  "permissionAudioContent":"Voice records, voice calls, ..."
+}

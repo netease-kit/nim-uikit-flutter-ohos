@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "searchSearch": "Search",
+  "searchSearchHit": "Please input your key word",
+  "searchSearchFriend": "Friend",
+  "searchSearchNormalTeam": "Normal team",
+  "searchSearchAdvanceTeam": "Advance Team",
+  "searchEmptyTips": "This user not exist",
+  "searchTeamLeave": "Leave Team",
+  "searchTeamDismissOrLeave": "Dismiss or leave team"
+}
